@@ -1,0 +1,84 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+    text-align: center;
+    text-size-adjust: 50%;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  #content{
+    font-size: 1.5em;
+  }
+  #projects{
+    font-size: 1.5em;
+  }
+</style>
+<body>
+  <header><h1>Welcome to Uttam Rana's Portfolio</h1></header>
+  <div id="main">
+    <article>
+        <div id = content>
+    <p>Hello and Welcome to my portfolio here you will find all the information about my
+        skill set and the tools I am familiar with for more information you can contact
+        drop a mail on the email given below.
+    </p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>GIT FLOW</li>
+        <li>PROGRAMMING WITH JAVA</li>
+        <li>MySQL</li>
+        <li>SHELL SCRIPT</li>
+        <li>Maven</li>
+     </ul>
+        </div>
+    </article>
+    <nav><div id="projects">
+        <p>Here is the list of projects I worked upon.</p>
+        <ul>
+        <li>E-commerce App</li>
+        <li>Perfume store</li>
+        <li>Loan Website</li>
+        <li>Delivery Application</li>
+        <li>Mechanic Booking System</li>
+        </ul>
+    </div></nav>
+  </div>
+  <footer><h2>For Contact Please Reach Out To Us!
+    <li>Email:uttamrana@gmail.com</li>
+  </h2></footer>
+</body>
